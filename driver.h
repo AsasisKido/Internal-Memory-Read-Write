@@ -10,7 +10,7 @@ enum Analysis
     Deep
 };
 
-class EnfusionProcess
+class driver
 {
 public:
     static void AutoGameSelection(Analysis methods);
@@ -66,10 +66,10 @@ private:
     }
 };
 
-const char* EnfusionProcess::GameName = "YourProcess.exe";
-uint64_t EnfusionProcess::ModuleBase = 0;
+const char* driver::GameName = "YourProcess.exe";
+uint64_t driver::ModuleBase = 0;
 
-void EnfusionProcess::AutoGameSelection(Analysis methods)
+void driver::AutoGameSelection(Analysis methods)
 {
     if (methods == Analysis::Easy || methods == Analysis::Normal || methods == Analysis::Deep)
     {
